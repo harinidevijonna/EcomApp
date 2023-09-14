@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Side-by-Side Images</title>
+
+
+    <link rel="stylesheet" href="backgroundstyle.css">
+    <style>
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .selected {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Below Tailors for womens</h2>
+    <div class="image-container" onclick="selectImage('image1')">
+        <img src="../pic/t1.jpg" alt="Image 1" width="210" height="120" id="image1">
+        <h3>Name:John</h3>
+        <button onclick="addToCart('Image 1','../pic/t1.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image2')">
+        <img src="../pic/t2.jpg" alt="Image 2" width="210" height="120" id="image2">
+        <h3>Name:joseph</h3>
+        <button onclick="addToCart('Image 1','../pic/t2.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image3')">
+        <img src="../pic/t3.jpeg" alt="Image 3" width="210" height="120" id="image3">
+        <h3>Name:kohn</h3>
+        <button onclick="addToCart('Image 1','../pic/t3.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image4')">
+        <img src="../pic/t4.jpg" alt="Image 4" width="210" height="120" id="image4">
+        <h3>Name:james</h3>
+        <button onclick="addToCart('Image 1','../pic/t4.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image5')">
+        <img src="../pic/t5.jpeg" alt="Image 1" width="230" height="120" id="image5">
+        <h3>Name:paul</h3>
+        <button onclick="addToCart('Image 1','../pic/t5.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image6')">
+        <img src="../pic/t6.jpg" alt="Image 2" width="230" height="120" id="image6">
+        <h3>Name:harini</h3>
+        <button onclick="addToCart('Image 1','../pic/t6.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image7')">
+        <img src="../pic/t7.jpg" alt="Image 3" width="210" height="120" id="image7">
+        <h3>Name:poli</h3>
+        <button onclick="addToCart('Image 1','../pic/t7.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image8')">
+        <img src="../pic/t8.png" alt="Image 4" width="210" height="120" id="image8">
+        <h3>Name:john</h3>
+        <button onclick="addToCart('Image 1','../pic/t8.png')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image9')">
+        <img src="../pic/t5.jpeg" alt="Image 2" width="210" height="120" id="image9">
+        <h3>Name:paul</h3>
+        <button onclick="addToCart('Image 1','../pic/t5.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image10')">
+        <img src="../pic/t6.jpg" alt="Image 3" width="210" height="120" id="image10">
+        <h3>Name:tharun</h3>
+        <button onclick="addToCart('Image 1','../pic/t6.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image11')">
+        <img src="../pic/t7.jpg" alt="Image 4" width="210" height="120" id="image11">
+        <h3>Name:john</h3>
+        <button onclick="addToCart('Image 1','../pic/t7.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image12')">
+        <img src="../pic/t8.png" alt="Image 2" width="210" height="120" id="image12">
+        <h3>Name:john</h3>
+        <button onclick="addToCart('Image 1','../pic/t8.png')">Add to Cart</button>
+    </div>
+    <h2>Below Tailors for Men</h2>
+    <div class="image-container" onclick="selectImage('image13')">
+        <img src="../pic/t1.jpg" alt="Image 2" width="210" height="120" id="image13">
+        <h3>Name:merry</h3>
+        <button onclick="addToCart('Image 1','../pic/t1.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image14')">
+        <img src="../pic/t2.jpg" alt="Image 3" width="210" height="120" id="image14">
+        <h3>Name:joseph</h3>
+        <button onclick="addToCart('Image 1','../pic/t2.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image15')">
+        <img src="../pic/t3.jpeg" alt="Image 4" width="230" height="120" id="image15">
+        <h3>Name:kohn</h3>
+        <button onclick="addToCart('Image 1','../pic/t3.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image1')">
+        <img src="../pic/t4.jpg" alt="Image 1" width="230" height="120" id="image1">
+        <h3>Name:james</h3>
+        <button onclick="addToCart('Image 1','../pic/t4.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image16')">
+        <img src="../pic/t5.jpeg" alt="Image 2" width="210" height="120" id="image16">
+        <h3>Name:paul</h3>
+        <button onclick="addToCart('Image 1','../pic/t5.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image17')">
+        <img src="../pic/t6.jpg" alt="Image 3" width="210" height="120" id="image17">
+        <h3>Name:harini</h3>
+        <button onclick="addToCart('Image 1','../pic/t6.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image18')">
+        <img src="../pic/t7.jpg" alt="Image 4" width="210" height="120" id="image18">
+        <h3>Name:poli</h3>
+        <button onclick="addToCart('Image 1','../pic/t7.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image19')">
+        <img src="../pic/t8.png" alt="Image 2" width="210" height="120" id="image19">
+        <h3>Name:john</h3>
+        <button onclick="addToCart('Image 1','../pic/t8.png')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image20')">
+        <img src="../pic/t5.jpeg" alt="Image 2" width="210" height="120" id="image20">
+        <h3>Name:paul</h3>
+        <button onclick="addToCart('Image 1','../pic/t5.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image21')">
+        <img src="../pic/t6.jpg" alt="Image 3" width="210" height="120" id="image21">
+        <h3>Name:tharun</h3>
+        <button onclick="addToCart('Image 1','../pic/t6.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image22')">
+        <img src="../pic/t7.jpg" alt="Image 4" width="210" height="120" id="image22">
+        <h3>Name:john</h3>
+        <button onclick="addToCart('Image 1','../pic/t7.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image23')">
+        <img src="../pic/t8.png" alt="Image 2" width="210" height="120" id="image23">
+        <h3>Name:john</h3>
+        <button onclick="addToCart('Image 1','../pic/t8.png')">Add to Cart</button>
+    </div>
+    <h2>Below Tailors  for Kids</h2>
+    <div class="image-container" onclick="selectImage('image24')">
+        <img src="../pic/t1.jpg" alt="Image 3" width="230" height="120" id="image24">
+        <h3>Name:merry</h3>
+        <button onclick="addToCart('Image 1','../pic/t1.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image25')">
+        <img src="../pic/t2.jpg" alt="Image 4" width="230" height="120" id="image25">
+        <h3>Name:joseph</h3>
+        <button onclick="addToCart('Image 1','../pic/t2.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image26')">
+        <img src="../pic/t3.jpeg" alt="Image 1" width="210" height="120" id="image26">
+        <h3>Name:kohn</h3>
+        <button onclick="addToCart('Image 1','../pic/t3.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image27')">
+        <img src="../pic/t4.jpg" alt="Image 2" width="210" height="120" id="image27">
+        <h3>Name:james</h3>
+        <button onclick="addToCart('Image 1','../pic/t4.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image28')">
+        <img src="../pic/t5.jpeg" alt="Image 3" width="210" height="120" id="image28">
+        <h3>Name:paul</h3>
+        <button onclick="addToCart('Image 1','../pic/t5.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image29')">
+        <img src="../pic/t6.jpg" alt="Image 4" width="210" height="120" id="image29">
+        <h3>Name:harini</h3>
+        <button onclick="addToCart('Image 1','../pic/t6.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image30')">
+        <img src="../pic/t7.jpg" alt="Image 3" width="230" height="120" id="image30">
+        <h3>Name:poli</h3>
+        <button onclick="addToCart('Image 1','../pic/t7.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image31')">
+        <img src="../pic/t8.png" alt="Image 4" width="230" height="120" id="image31">
+        <h3>Name:john</h3>
+        <button onclick="addToCart('Image 1','../pic/t8.png')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image32')">
+        <img src="../pic/t5.jpeg" alt="Image 2" width="210" height="120" id="image32">
+        <h3>Name:paul</h3>
+        <button onclick="addToCart('Image 1','../pic/t5.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image33')">
+        <img src="../pic/t6.jpg" alt="Image 3" width="210" height="120" id="image34">
+        <h3>Name:tharun</h3>
+        <button onclick="addToCart('Image 1','../pic/t6.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image35')">
+        <img src="../pic/t7.jpg" alt="Image 4" width="210" height="120" id="image35">
+        <h3>Name:john</h3>
+        <button onclick="addToCart('Image 1','../pic/t7.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image36')">
+        <img src="../pic/t8.png" alt="Image 2" width="210" height="120" id="image36">
+        <h3>Name:john</h3>
+        <button onclick="addToCart('Image 1','../pic/t8.png')">Add to Cart</button>
+    </div>
+    <script>
+        function selectImage(imageId) {
+            const images = document.querySelectorAll('.image-container img');
+            images.forEach((image) => {
+                if (image.id === imageId) {
+                    image.classList.toggle('selected');
+                    
+                } else {
+                    image.classList.remove('selected');
+                }
+            });
+        }
+    </script>
+    <script>
+        function addToCart(fabricName, fabricPhoto) {
+            // Check if the 'cart' data exists in localStorage
+            let cartData = localStorage.getItem('cart');
+            if (cartData) {
+                // If cart data exists, parse it as JSON
+                cartData = JSON.parse(cartData);
+            } else {
+                // If cart data doesn't exist, initialize an empty array
+                cartData = [];
+            }
+
+            // Add the fabric to the cart data
+            cartData.push({ name: fabricName, photo: fabricPhoto });
+
+            // Save the updated cart data in localStorage
+            localStorage.setItem('cart', JSON.stringify(cartData));
+
+            alert(`Added ${fabricName} to cart!`);
+        }
+    </script>
+</body>
+
+</html>

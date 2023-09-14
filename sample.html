@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text Over Image</title>
+    <style>
+        /* Style for the container div */
+        .image-container {
+            position: relative;
+            /* Set the container as a reference for absolute positioning */
+            display: inline-block;
+            /* Display the container inline with the text */
+        }
+
+        /* Style for the image */
+        .image-container img {
+            max-width: 100%;
+            /* To ensure the image doesn't exceed its container */
+            display: block;
+            /* Remove any extra spacing or gaps */
+        }
+
+        /* Style for the text overlay */
+        .image-text {
+            position: absolute;
+            top: 50%;
+            /* Adjust this value to vertically center the text */
+            left: 50%;
+            /* Adjust this value to horizontally center the text */
+            transform: translate(-50%, -50%);
+            /* Center the text precisely */
+            color: white;
+            /* Set the text color */
+            font-size: 24px;
+            /* Set the font size */
+            font-weight: bold;
+            /* Set the font weight */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* Add a text shadow for better visibility */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="path_to_your_image.jpg" alt="Image">
+        <div class="image-text">Text Overlay</div>
+    </div>
+</body>
+
+</html>

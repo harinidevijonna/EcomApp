@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Side-by-Side Images</title>
+
+
+    <link rel="stylesheet" href="backgroundstyle.css">
+    <style>
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .selected {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Models</h1>
+    <div class="image-container" onclick="selectImage('image1')">
+        <img src="../pic/d1.jpg" alt="Image 1" width="210" height="150" id="image1">
+        <h1></h1>
+        <button onclick="addToCart('Image 1','../pic/d1.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image2')">
+        <img src="../pic/d2.jpeg" alt="Image 2" width="210" height="150" id="image2">
+        <h1></h1>
+        <button onclick="addToCart('Image 2','../pic/d2.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image3')">
+        <img src="../pic/d3.jpg" alt="Image 3" width="210" height="150" id="image3">
+        <h1></h1>
+        <button onclick="addToCart('Image 3','../pic/d3.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image4')">
+        <img src="../pic/d4.jpg" alt="Image 4" width="210" height="150" id="image4">
+        <h1></h1>
+        <button onclick="addToCart('Image 4','../pic/d4.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image5')">
+        <img src="../pic/d5.jpg" alt="Image 5" width="230" height="150" id="image5">
+        <h1></h1>
+        <button onclick="addToCart('Image 5','../pic/d5.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image6')">
+        <img src="../pic/d6.jpeg" alt="Image 6" width="230" height="150" id="image6">
+        <h1></h1>
+        <button onclick="addToCart('Image 6','../pic/d6.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image7')">
+        <img src="../pic/d7.jpeg" alt="Image 3" width="210" height="150" id="image7">
+        <h1></h1>
+        <button onclick="addToCart('Image 7','../pic/d7.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image8')">
+        <img src="../pic/d8.jpeg" alt="Image 7" width="210" height="150" id="image8">
+        <h1></h1>
+        <button onclick="addToCart('Image 8','../pic/d8.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image9')">
+        <img src="../pic/d9.jpg" alt="Image 8" width="210" height="150" id="image9">
+        <h1></h1>
+        <button onclick="addToCart('Image 9','../pic/d9.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image10')">
+        <img src="../pic/d10.jpg" alt="Image 9" width="210" height="150" id="image10">
+        <h1></h1>
+        <button onclick="addToCart('Image 10','../pic/d10.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image11')">
+        <img src="../pic/d11.jpeg" alt="Image 10" width="230" height="150" id="image11">
+        <h1></h1>
+        <button onclick="addToCart('Image 11','../pic/d11.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image12')">
+        <img src="../pic/d12.jpeg" alt="Image 11" width="230" height="150" id="image12">
+        <h1></h1>
+        <button onclick="addToCart('Image 12','../pic/d12.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image13')">
+        <img src="../pic/d13.jpeg" alt="Image 12" width="210" height="150" id="image13">
+        <h1></h1>
+        <button onclick="addToCart('Image 13','../pic/d13.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image14')">
+        <img src="../pic/d1.jpg" alt="Image 13" width="210" height="150" id="image14">
+        <h1></h1>
+        <button onclick="addToCart('Image 14','../pic/d1.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image15')">
+        <img src="../pic/d2.jpeg" alt="Image 14" width="210" height="150" id="image15">
+        <h1></h1>
+        <button onclick="addToCart('Image 15','../pic/d2.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image16')">
+        <img src="../pic/d3.jpg" alt="Image 15" width="210" height="150" id="image16">
+        <h1></h1>
+        <button onclick="addToCart('Image 16','../pic/d3.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image17')">
+        <img src="../pic/d4.jpg" alt="Image 17" width="230" height="150" id="image17">
+        <h1></h1>
+        <button onclick="addToCart('Image 17','../pic/d4.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image18')">
+        <img src="../pic/d5.jpg" alt="Image 18" width="230" height="150" id="image18">
+        <h1></h1>
+        <button onclick="addToCart('Image 19','../pic/d5.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image19')">
+        <img src="../pic/t3.jpeg" alt="Image 20" width="210" height="150" id="image19">
+        <h1></h1>
+        <button onclick="addToCart('Image 20','../pic/t3.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image20')">
+        <img src="../pic/t4.jpg" alt="Image 21" width="210" height="150" id="image20">
+        <h1></h1>
+        <button onclick="addToCart('Image 21','../pic/t4.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image21')">
+        <img src="../pic/t5.jpeg" alt="Image 22" width="210" height="150" id="image21">
+        <h1></h1>
+        <button onclick="addToCart('Image 22','../pic/t5.jpeg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image22')">
+        <img src="../pic/t6.jpg" alt="Image 23" width="210" height="150" id="image22">
+        <h1></h1>
+        <button onclick="addToCart('Image 23','../pic/t6.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image23')">
+        <img src="../pic/t7.jpg" alt="Image 24" width="230" height="150" id="image23">
+        <h1></h1>
+        <button onclick="addToCart('Image 24','../pic/t7.jpg')">Add to Cart</button>
+    </div>
+    <div class="image-container" onclick="selectImage('image24')">
+        <img src="../pic/t8.png" alt="Image 25" width="230" height="150" id="image24">
+        <h1></h1>
+        <button onclick="addToCart('Image 25','../pic/t8.png')">Add to Cart</button>
+    </div>
+    <script>
+        function selectImage(imageId) {
+            const images = document.querySelectorAll('.image-container img');
+            images.forEach((image) => {
+                if (image.id === imageId) {
+                    image.classList.toggle('selected');
+                } else {
+                    image.classList.remove('selected');
+                }
+            });
+        }
+    </script>
+    <script>
+        function addToCart(fabricName, fabricPhoto) {
+            // Check if the 'cart' data exists in localStorage
+            let cartData = localStorage.getItem('cart');
+            if (cartData) {
+                // If cart data exists, parse it as JSON
+                cartData = JSON.parse(cartData);
+            } else {
+                // If cart data doesn't exist, initialize an empty array
+                cartData = [];
+            }
+
+            // Add the fabric to the cart data
+            cartData.push({ name: fabricName, photo: fabricPhoto });
+
+            // Save the updated cart data in localStorage
+            localStorage.setItem('cart', JSON.stringify(cartData));
+
+            alert(`Added ${fabricName} to cart!`);
+        }
+    </script>
+</body>
+
+</html>

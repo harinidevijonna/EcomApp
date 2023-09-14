@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DesignMyFit - Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    
+        h1 {
+            margin-bottom: 20px;
+        }
+    
+        #cartItems {
+            list-style: none;
+            padding: 0;
+        }
+    
+        #cartItems li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+        #cartItems img {
+            max-width: 250px;
+            margin-right: 10px;
+        }
+    
+        .empty-cart {
+            color: #888;
+        }
+    </style>
+    </head>
+    
+
+<body>
+    <h1>Cart</h1>
+    <div id="cartItems">
+        <!-- Selected fabrics will be displayed here -->
+    </div>
+
+    <script>
+        // Retrieve the cart data from localStorage
+        const cartData = localStorage.getItem('cart');
+
+        if (cartData) {
+            // If cart data exists, parse it as JSON
+            const fabricsInCart = JSON.parse(cartData);
+
+            // Get the cartItems div to display the selected fabrics
+            const cartItemsDiv = document.getElementById('cartItems');
+
+            // Create a list to display the selected fabrics
+            const cartList = document.createElement('ul');
+
+            // Loop through the selected fabrics and add them to the list
+            fabricsInCart.forEach(fabric => {
+                const listItem = document.createElement('li');
+                const fabricImg = document.createElement('img');
+                fabricImg.src = fabric.photo;
+                fabricImg.alt = fabric.name;
+                listItem.appendChild(fabricImg);
+                cartList.appendChild(listItem);
+            });
+
+            // Append the list to the cartItems div
+            cartItemsDiv.appendChild(cartList);
+        } else {
+            // If cart data doesn't exist, display a message
+            const cartItemsDiv = document.getElementById('cartItems');
+            cartItemsDiv.textContent = 'Your cart is empty.';
+        }
+    </script>
+</body>
+
+</html>
+
+
